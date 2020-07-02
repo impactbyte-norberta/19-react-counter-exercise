@@ -15,11 +15,16 @@ function FunctionCounter() {
         }
     }
 
+    function resetNumber() {
+        setNumber(0);
+    }
+
     return (
         <div>
             <h1>{number}</h1>
             <button onClick={addNumber}>Tambah</button>
             <button onClick={substractNumber}>Kurang</button>
+            <button onClick={resetNumber}>Reset</button>
         </div>
     );
 }

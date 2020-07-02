@@ -17,12 +17,17 @@ class ClassCounter extends Component {
         }
     };
 
+    resetNumber = () => {
+        this.setState({ number: 0 });
+    };
+
     render() {
         return (
             <div>
                 <h1>{this.state.number}</h1>
                 <button onClick={this.addNumber}>Tambah</button>
                 <button onClick={this.substractNumber}>Kurang</button>
+                <button onClick={this.resetNumber}>Reset</button>
             </div>
         );
     }
